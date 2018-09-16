@@ -61,3 +61,6 @@ AndroidNative/gradlew.bat
 !EmbeddingTestBeds/Embedding.iOS/*.designer.cs
 # temporary vim files
 *.swp
+/WPF_TESTS/packages/Meziantou.WpfFontAwesome.5.3.1/lib/net40/Meziantou.WpfFontAwesome.pdb
+/WPF_TESTS/packages
+/WPF_TESTS/SIMPLE_TEST/MyXamarinWPFApp/packages

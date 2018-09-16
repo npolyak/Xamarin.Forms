@@ -1,18 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{411B960D-6D30-4079-83B2-ABB9987D2EDF}</ProjectGuid>
+    <ProjectGuid>{E2357B23-53AC-4364-810F-54DCAB6BCCDE}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Xamarin.Forms.ControlGallery.WPF</RootNamespace>
-    <AssemblyName>Xamarin.Forms.ControlGallery.WPF</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <RootNamespace>MyXamarinWPFApp</RootNamespace>
+    <AssemblyName>MyXamarinWPFApp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
-    <TargetFrameworkProfile />
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -23,7 +23,6 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,21 +32,8 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Meziantou.WpfFontAwesome, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>$(SolutionDir)packages\Meziantou.WpfFontAwesome.5.3.1\lib\net40\Meziantou.WpfFontAwesome.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Maps.MapControl.WPF, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>$(SolutionDir)packages\Microsoft.Maps.MapControl.WPF.1.0.0.3\lib\net40-Client\Microsoft.Maps.MapControl.WPF.dll</HintPath>
-    </Reference>
-    <Reference Include="OpenTK, Version=3.0.1.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
-      <HintPath>$(SolutionDir)packages\OpenTK.3.0.1\lib\net20\OpenTK.dll</HintPath>
-    </Reference>
-    <Reference Include="OpenTK.GLControl, Version=3.0.1.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
-      <HintPath>$(SolutionDir)packages\OpenTK.GLControl.3.0.1\lib\net20\OpenTK.GLControl.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -62,19 +48,12 @@
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
-    <Reference Include="WpfLightToolkit, Version=1.0.3.36, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>$(SolutionDir)packages\WpfLightToolkit.1.0.3\lib\net45\WpfLightToolkit.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="OpenGLViewApp.cs" />
-    <Compile Include="RegistrarValidationService.cs" />
-    <Compile Include="SampleNativeControl.cs" />
-    <Compile Include="StringProvider.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -106,12 +85,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Resource Include="Assets\fontawesome-webfont.ttf" />
-    <Resource Include="Assets\pickax.ttf" />
-    <None Include="OpenTK.dll.config" />
-    <None Include="packages.config">
-      <SubType>Designer</SubType>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -121,25 +94,49 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Xamarin.Forms.Controls\Xamarin.Forms.Controls.csproj">
-      <Project>{cb9c96ce-125c-4a68-b6a1-c3ff1fbf93e1}</Project>
+    <ProjectReference Include="..\..\..\..\Xamarin.Forms.ControlGallery.WPF\Xamarin.Forms.ControlGallery.WPF.csproj">
+      <Project>{411b960d-6d30-4079-83b2-abb9987d2edf}</Project>
+      <Name>Xamarin.Forms.ControlGallery.WPF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Xamarin.Forms.Controls\Xamarin.Forms.Controls.csproj">
+      <Project>{b3478a0d-97a0-40a1-ae5e-c43c3cd6a20d}</Project>
       <Name>Xamarin.Forms.Controls</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Xamarin.Forms.Core\Xamarin.Forms.Core.csproj">
-      <Project>{57b8b73d-c3b5-4c42-869e-7b2f17d354ac}</Project>
+    <ProjectReference Include="..\..\..\..\Xamarin.Forms.Core\Xamarin.Forms.Core.csproj">
+      <Project>{444cbb42-0809-4c21-8ed7-4175c5c0424c}</Project>
       <Name>Xamarin.Forms.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Xamarin.Forms.Maps.WPF\Xamarin.Forms.Maps.WPF.csproj">
+    <ProjectReference Include="..\..\..\..\Xamarin.Forms.CustomAttributes\Xamarin.Forms.CustomAttributes.csproj">
+      <Project>{f0e30c61-db6f-41b0-91a5-6c3702e7bfff}</Project>
+      <Name>Xamarin.Forms.CustomAttributes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Xamarin.Forms.Maps.WPF\Xamarin.Forms.Maps.WPF.csproj">
       <Project>{89b0db73-a32e-447c-9390-a2a59d89b2e4}</Project>
       <Name>Xamarin.Forms.Maps.WPF</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Xamarin.Forms.Maps\Xamarin.Forms.Maps.csproj">
-      <Project>{7d13bac2-c6a4-416a-b07e-c169b199e52b}</Project>
+    <ProjectReference Include="..\..\..\..\Xamarin.Forms.Maps\Xamarin.Forms.Maps.csproj">
+      <Project>{b2b65b98-5158-4b83-bbdc-cdcf9c6008ec}</Project>
       <Name>Xamarin.Forms.Maps</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Xamarin.Forms.Platform.WPF\Xamarin.Forms.Platform.WPF.csproj">
+    <ProjectReference Include="..\..\..\..\Xamarin.Forms.Pages\Xamarin.Forms.Pages.csproj">
+      <Project>{cc552e6a-c745-448a-ad1f-5df02646808b}</Project>
+      <Name>Xamarin.Forms.Pages</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Xamarin.Forms.Platform.WPF\Xamarin.Forms.Platform.WPF.csproj">
       <Project>{140bc260-8b15-4d3a-b1b0-ddd8072918cc}</Project>
       <Name>Xamarin.Forms.Platform.WPF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Xamarin.Forms.Platform\Xamarin.Forms.Platform.csproj">
+      <Project>{8a26fa39-9fa7-47cc-9f16-6c2bb9c8a1cc}</Project>
+      <Name>Xamarin.Forms.Platform</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Xamarin.Forms.Xaml\Xamarin.Forms.Xaml.csproj">
+      <Project>{bf82baac-5e74-41dc-8bed-3b0fe0d8a79e}</Project>
+      <Name>Xamarin.Forms.Xaml</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SimpleFormsTest\SimpleFormsTest\SimpleFormsTest.csproj">
+      <Project>{a1dbb60b-b98c-4b5a-8a38-5c1dec124246}</Project>
+      <Name>SimpleFormsTest</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

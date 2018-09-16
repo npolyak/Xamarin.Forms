@@ -1,0 +1,106 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2018
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyXamarinWPFApp", "TESTS/MyXamarinWPFApp\MyXamarinWPFApp.csproj", "{E2357B23-53AC-4364-810F-54DCAB6BCCDE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xamarin.Forms.Xaml", "..\..\Xamarin.Forms.Xaml\Xamarin.Forms.Xaml.csproj", "{BF82BAAC-5E74-41DC-8BED-3B0FE0D8A79E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xamarin.Forms.Core", "..\..\Xamarin.Forms.Core\Xamarin.Forms.Core.csproj", "{444CBB42-0809-4C21-8ED7-4175C5C0424C}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Xamarin.Flex", "..\..\Xamarin.Flex\Xamarin.Flex.shproj", "{A6703C7D-D362-452A-A7A5-73771194D38C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xamarin.Forms.Platform", "..\..\Xamarin.Forms.Platform\Xamarin.Forms.Platform.csproj", "{8A26FA39-9FA7-47CC-9F16-6C2BB9C8A1CC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xamarin.Forms.Pages", "..\..\Xamarin.Forms.Pages\Xamarin.Forms.Pages.csproj", "{CC552E6A-C745-448A-AD1F-5DF02646808B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xamarin.Forms.Controls", "..\..\Xamarin.Forms.Controls\Xamarin.Forms.Controls.csproj", "{B3478A0D-97A0-40A1-AE5E-C43C3CD6A20D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xamarin.Forms.Maps", "..\..\Xamarin.Forms.Maps\Xamarin.Forms.Maps.csproj", "{B2B65B98-5158-4B83-BBDC-CDCF9C6008EC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xamarin.Forms.CustomAttributes", "..\..\Xamarin.Forms.CustomAttributes\Xamarin.Forms.CustomAttributes.csproj", "{F0E30C61-DB6F-41B0-91A5-6C3702E7BFFF}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Xamarin.Forms.Controls.Issues.Shared", "..\..\Xamarin.Forms.Controls.Issues\Xamarin.Forms.Controls.Issues.Shared\Xamarin.Forms.Controls.Issues.Shared.shproj", "{0F0DB9CC-EA65-429C-9363-38624BF8F49C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Forms.ControlGallery.WPF", "..\..\Xamarin.Forms.ControlGallery.WPF\Xamarin.Forms.ControlGallery.WPF.csproj", "{411B960D-6D30-4079-83B2-ABB9987D2EDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Forms.Platform.WPF", "..\..\Xamarin.Forms.Platform.WPF\Xamarin.Forms.Platform.WPF.csproj", "{140BC260-8B15-4D3A-B1B0-DDD8072918CC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WPF", "WPF", "{9A8EE3B3-899E-40D7-8916-7E77F83C76AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Forms.Maps.WPF", "..\..\Xamarin.Forms.Maps.WPF\Xamarin.Forms.Maps.WPF.csproj", "{89B0DB73-A32E-447C-9390-A2A59D89B2E4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TEST", "TEST", "{19E4099E-9D3B-4EB2-BF41-7F7A6399FC71}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SimpleTest", "SimpleTest", "{DA43B306-6640-4B5F-84F9-D485197DA7F2}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		..\..\Xamarin.Forms.Controls.Issues\Xamarin.Forms.Controls.Issues.Shared\Xamarin.Forms.Controls.Issues.Shared.projitems*{0f0db9cc-ea65-429c-9363-38624bf8f49c}*SharedItemsImports = 13
+		..\..\Xamarin.Flex\Xamarin.Flex.projitems*{a6703c7d-d362-452a-a7a5-73771194d38c}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E2357B23-53AC-4364-810F-54DCAB6BCCDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2357B23-53AC-4364-810F-54DCAB6BCCDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2357B23-53AC-4364-810F-54DCAB6BCCDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2357B23-53AC-4364-810F-54DCAB6BCCDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF82BAAC-5E74-41DC-8BED-3B0FE0D8A79E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF82BAAC-5E74-41DC-8BED-3B0FE0D8A79E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF82BAAC-5E74-41DC-8BED-3B0FE0D8A79E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF82BAAC-5E74-41DC-8BED-3B0FE0D8A79E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{444CBB42-0809-4C21-8ED7-4175C5C0424C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{444CBB42-0809-4C21-8ED7-4175C5C0424C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{444CBB42-0809-4C21-8ED7-4175C5C0424C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{444CBB42-0809-4C21-8ED7-4175C5C0424C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A26FA39-9FA7-47CC-9F16-6C2BB9C8A1CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A26FA39-9FA7-47CC-9F16-6C2BB9C8A1CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A26FA39-9FA7-47CC-9F16-6C2BB9C8A1CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A26FA39-9FA7-47CC-9F16-6C2BB9C8A1CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC552E6A-C745-448A-AD1F-5DF02646808B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC552E6A-C745-448A-AD1F-5DF02646808B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC552E6A-C745-448A-AD1F-5DF02646808B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC552E6A-C745-448A-AD1F-5DF02646808B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3478A0D-97A0-40A1-AE5E-C43C3CD6A20D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3478A0D-97A0-40A1-AE5E-C43C3CD6A20D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3478A0D-97A0-40A1-AE5E-C43C3CD6A20D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3478A0D-97A0-40A1-AE5E-C43C3CD6A20D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2B65B98-5158-4B83-BBDC-CDCF9C6008EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2B65B98-5158-4B83-BBDC-CDCF9C6008EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2B65B98-5158-4B83-BBDC-CDCF9C6008EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2B65B98-5158-4B83-BBDC-CDCF9C6008EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0E30C61-DB6F-41B0-91A5-6C3702E7BFFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0E30C61-DB6F-41B0-91A5-6C3702E7BFFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0E30C61-DB6F-41B0-91A5-6C3702E7BFFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0E30C61-DB6F-41B0-91A5-6C3702E7BFFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{411B960D-6D30-4079-83B2-ABB9987D2EDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{411B960D-6D30-4079-83B2-ABB9987D2EDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{411B960D-6D30-4079-83B2-ABB9987D2EDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{411B960D-6D30-4079-83B2-ABB9987D2EDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{140BC260-8B15-4D3A-B1B0-DDD8072918CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{140BC260-8B15-4D3A-B1B0-DDD8072918CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{140BC260-8B15-4D3A-B1B0-DDD8072918CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{140BC260-8B15-4D3A-B1B0-DDD8072918CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89B0DB73-A32E-447C-9390-A2A59D89B2E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89B0DB73-A32E-447C-9390-A2A59D89B2E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89B0DB73-A32E-447C-9390-A2A59D89B2E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89B0DB73-A32E-447C-9390-A2A59D89B2E4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E2357B23-53AC-4364-810F-54DCAB6BCCDE} = {DA43B306-6640-4B5F-84F9-D485197DA7F2}
+		{411B960D-6D30-4079-83B2-ABB9987D2EDF} = {9A8EE3B3-899E-40D7-8916-7E77F83C76AC}
+		{140BC260-8B15-4D3A-B1B0-DDD8072918CC} = {9A8EE3B3-899E-40D7-8916-7E77F83C76AC}
+		{89B0DB73-A32E-447C-9390-A2A59D89B2E4} = {9A8EE3B3-899E-40D7-8916-7E77F83C76AC}
+		{DA43B306-6640-4B5F-84F9-D485197DA7F2} = {19E4099E-9D3B-4EB2-BF41-7F7A6399FC71}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F0CB8B2B-3F56-41B7-AB79-9DAB5A10B177}
+	EndGlobalSection
+EndGlobal
